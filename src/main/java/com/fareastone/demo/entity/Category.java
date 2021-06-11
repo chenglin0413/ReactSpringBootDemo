@@ -31,13 +31,15 @@ public class Category {
 	public Category() {
 		
 	}
+	
+
 	public Category(String name, String active_start_date, String url, String description) {
-		super();
 		this.name = name;
 		this.active_start_date = active_start_date;
 		this.url = url;
 		this.description = description;
 	}
+
 
 	public int getCategory_id() {
 		return category_id;

@@ -51,8 +51,8 @@ public class CategoryServiceImpl implements CategoryService {
 		//分頁
 		Pageable pageable = new PageRequest(pageNum-1,10);
 		Page<Category> page = this.categoryRepository.findAll(spec,pageable);
-		System.out.println("總頁數"+page.getTotalPages());
-		System.out.println("總筆數"+page.getTotalElements());
+		System.out.println("Total Pages: "+page.getTotalPages());
+		System.out.println("Toal Elements: "+page.getTotalElements());
 		return page ;
 	}
 	@Override
